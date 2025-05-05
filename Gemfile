@@ -38,7 +38,7 @@ gem 'web-console', group: :development
 #, '~> 4.2', '>= 4.2.1'
 gem 'standard', '~> 1.43'
 gem 'pry', '~> 0.15.2'
-gem 'test-unit', '~> 3.6', '>= 3.6.7'
+gem 'test-unit', '~> 3.6'
 gem 'timecop', '~> 0.9.10'
 gem 'yard', '~> 0.9.37'
 
