@@ -71,7 +71,7 @@ gem 'minitest', '~> 5.25', '>= 5.25.4'
   gem 'rubocop-rake'
   gem 'simplecov', require: false
   gem "capybara"
-  gem 'selenium-webdriver', '~> 4.27'
+  gem 'selenium-webdriver', '~> 4.32'
 end
 group :apps do
   gem 'rerun'
