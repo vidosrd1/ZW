@@ -1,0 +1,26 @@
+# fly.toml app configuration file
+#
+# IMPORTANT: The app name must be unique across all Fly.io applications.
+# Replace "your-app-name-here" with your desired app name.
+
+app = "your-app-name-here"
+primary_region = "dfw"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+[build]
+  # Optional build configuration
+
+[env]
+  # Environment variables to be set for the app
+  PORT = "8080"
+
+[deploy]
+  # Optional deploy configuration
+  strategy = "immediate"
+
