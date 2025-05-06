@@ -23,7 +23,7 @@ gem "thruster", require: false
 gem 'image_processing', '~> 1.14'
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem 'madmin', '~> 2.0', '>= 2.0.1'
-gem 'pagy', '~> 8.6', '>= 8.6.3'
+gem 'pagy', '~> 9.3'
 #gem 'pagy', '~> 9.3', '>= 9.3.1'
 gem 'cssbundling-rails'#, '~> 1.4', '>= 1.4.1'
 gem "appraisal"
