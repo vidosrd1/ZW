@@ -193,7 +193,7 @@ GEM
     loofah (2.24.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    madmin (2.0.1)
+    madmin (2.0.2)
       importmap-rails
       pagy (>= 3.5)
       propshaft
@@ -301,7 +301,7 @@ GEM
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
       rack (>= 3.0.0, < 4)
-    rack-session (2.1.0)
+    rack-session (2.1.1)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
     rack-test (2.2.0)
@@ -569,7 +569,7 @@ DEPENDENCIES
   jbuilder
   kalibera
   kamal
-  madmin (~> 2.0, >= 2.0.1)
+  madmin (~> 2.0)
   memory_profiler
   minitest (~> 5.25, >= 5.25.5)
   minitest-reporters (~> 1.7, >= 1.7.1)
