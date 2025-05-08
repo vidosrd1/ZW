@@ -13,7 +13,6 @@
     text-white block font-medium" %>
     <% end %>
   </div>
-  <br />
   <%= form_with(url: blogs_path, method: :get,
   data: {turbo_frame: "blogs", turbo_action: "advance"}) do |form| %>
       <%= form.label :query, "Search by tag name:",
@@ -21,7 +20,7 @@
       <div class="flex space-x-3">
         <%= form.text_field :query, class: "py-2 px-4 rounded border ring-0
         focus:ring-4 focus:ring-orange-100 focus:shadow-none
-        focus:border-orange-500 dark:text-slate-800 focus:outline-none",
+        focus:border-orange-500 1dark:text-slate-800 focus:outline-none",
         data: {action: "input->search-form#search"} %>
 
         <%= form.submit 'Search', class: "px-4 py-2 font-medium
@@ -30,13 +29,11 @@
         text-gray-900 hover:text-gray-100 focus:ring-orange-100" %>
       </div>
   <% end %>
-  <br />
   <% if @pagy.count > @pagy.items %>
     <div class="mt-10">
       <%== pagy_nav(@pagy) %>
     </div>
   <% end %>
-  <br />
   <div id="blogs" class="min-w-full">
     <table>
       <thead>
@@ -75,7 +72,7 @@
                     length:50) %></a>
                  </li>
                 <% end %>
-                <br />
+                <br>
               </ul>
             </td>
             <td class="" style="width:10px; heigh:auto"></td>
@@ -91,19 +88,18 @@
       </tbody>
     </table>
   </div>
-  <% if user_signed_in? %>
-  <br />
   <% if @pagy.count > @pagy.items %>
     <div class="mt-10">
       <%== pagy_nav(@pagy) %>
     </div>
   <% end %>
-  <br />
+  <br>
+  <% if user_signed_in? %>
   <div class="flex justify-between items-center">
     <%= link_to 'New blog', new_blog_path,
     class: "rounded-lg py-3 px-4 bg-blue-600
     text-white block font-medium" %>
   </div>
+  <br>
   <% end %>
-  <br />
 </div>

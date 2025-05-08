@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem 'rake', '~> 13.2', '>= 13.2.1'
 gem 'rails', '~> 8.0', '>= 8.0.2'
+gem 'rails_node_module_linker', '~> 0.1.1'
 gem "propshaft"
 gem 'pg'#, '~> 1.5', '>= 1.5.9'
 #gem 'sqlite3', '~> 2.5'
@@ -22,9 +23,9 @@ gem "kamal", require: false
 gem "thruster", require: false
 gem 'image_processing', '~> 1.14'
 gem 'devise', '~> 4.9', '>= 4.9.4'
-gem 'madmin', '~> 2.0', '>= 2.0.1'
-gem 'pagy', '~> 8.6', '>= 8.6.3'
-#gem 'pagy', '~> 9.3', '>= 9.3.1'
+gem 'madmin', '~> 2.0', '>= 2.0.2'
+gem 'pagy', '~> 9.3', '>= 9.3.4'
+#gem 'pagy', '~> 8.6', '>= 8.6.3'
 gem 'cssbundling-rails'#, '~> 1.4', '>= 1.4.1'
 gem "appraisal"
 gem 'pusher', '~> 2.0', '>= 2.0.3'
@@ -49,7 +50,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 group :development do
-  gem 'solargraph', '~> 0.54.2'
+  #gem 'solargraph', '~> 0.54.2'
   #gem 'solargraph'               # run the Solargraph rebuild command in VSC
   #gem "web-console"
 end
@@ -62,7 +63,8 @@ gem 'minitest', '~> 5.25', '>= 5.25.5'
   gem 'minitest-reporters', '~> 1.7', '>= 1.7.1'
   #gem 'minitest-reporters'
   gem 'oj', require: false     # false is for testing with or without it
-  gem 'rack'
+gem 'rack', '~> 3.1', '>= 3.1.14'
+gem 'rack-session', '~> 2.1', '>= 2.1.1'
   gem 'rake-manifest'
   gem 'rematch'
   gem 'rubocop'
@@ -72,7 +74,7 @@ gem 'minitest', '~> 5.25', '>= 5.25.5'
   gem 'rubocop-rake'
   gem 'simplecov', require: false
   gem "capybara"
-  gem 'selenium-webdriver', '~> 4.32'
+  #gem 'selenium-webdriver', '~> 4.32'
 end
 group :apps do
   gem 'rerun'
