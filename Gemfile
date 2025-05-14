@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem 'rake', '~> 13.2', '>= 13.2.1'
 gem 'rails', '~> 8.0', '>= 8.0.2'
-gem 'rails_node_module_linker', '~> 0.1.1'
+gem 'rails_node_module_linker', '~> 0.2.0'
 gem "propshaft"
 gem 'pg'#, '~> 1.5', '>= 1.5.9'
 #gem 'sqlite3', '~> 2.5'
