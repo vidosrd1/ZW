@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'rake', '~> 13.2', '>= 13.2.1'
+gem 'rake', '~> 13.3'
 gem 'rails', '~> 8.0', '>= 8.0.2'
 gem 'rails_node_module_linker', '~> 0.1.1'
 gem "propshaft"
