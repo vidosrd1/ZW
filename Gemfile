@@ -63,7 +63,7 @@ gem 'minitest', '~> 5.25', '>= 5.25.5'
   gem 'minitest-reporters', '~> 1.7', '>= 1.7.1'
   #gem 'minitest-reporters'
   gem 'oj', require: false     # false is for testing with or without it
-gem 'rack', '~> 3.1', '>= 3.1.14'
+gem 'rack', '~> 3.1'
 gem 'rack-session', '~> 2.1', '>= 2.1.1'
   gem 'rake-manifest'
   gem 'rematch'
