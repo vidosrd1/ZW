@@ -38,7 +38,7 @@ gem 'standardrb'#, '~> 1.0', '>= 1.0.1'
 gem 'web-console', group: :development
 gem "tailwindcss-rails", "~> 4.2"
 #, '~> 4.2', '>= 4.2.1'
-gem 'standard', '~> 1.49'
+gem 'standard', '~> 1.51'
 gem 'pry', '~> 0.15.2'
 gem 'test-unit', '~> 3.6', '>= 3.6.8'
 gem 'timecop', '~> 0.9.10'
