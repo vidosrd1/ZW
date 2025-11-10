@@ -2,7 +2,7 @@
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-
+<br><br>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, 
@@ -32,9 +32,11 @@ class: "py-2 px-4 rounded border ring-0
     1dark:text-slate-800 focus:border-orange-500 focus:outline-none",
 autocomplete: "new-password" %>
   </div>
-
+<br><br>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up",
+    class:"dark:text-slate-500
+    1font-bold text-2xl" %>
   </div>
 <% end %>
 
